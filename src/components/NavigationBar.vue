@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import router from '@/router';
+
+</script>
+
 <template>
   <header class="navbar">
     <div class="logo-container">
@@ -17,6 +22,10 @@
   <router-link to="/motorsport" class="nav-item">Motorsport</router-link>
   <router-link to="/news" class="nav-item">News</router-link>
   <router-link to="/contact" class="nav-item">Contact</router-link>
+  <router-link to="/sample-data"class="nav-item">Sample Data</router-link>
+  <router-link to="/sample-methods"class="nav-item">Sample Methods</router-link>
+  <router-link to="/sample-model"class="nav-item">Sample Model</router-link>
+  <router-link to="/live-profile"class="nav-item">Live Profile</router-link>
   <router-link to="/login" class="portal-btn">My Porsche</router-link>
     </nav>
   </header>
@@ -86,7 +95,7 @@
 }
 
 .portal-btn {
-  background-color: #e30613; /* Porsche red */
+  background-color: #e30613; 
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   padding: 0.65rem 1.4rem;

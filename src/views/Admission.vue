@@ -1,4 +1,8 @@
 <script setup>
+
+import { ref } from 'vue';
+import NavigationBar from '@/components/NavigationBar.vue';
+
 </script>
 
 <template>
