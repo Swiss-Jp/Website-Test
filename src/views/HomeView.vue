@@ -54,6 +54,7 @@
 </template>
 
 <style scoped>
+/* --- your existing desktop styles --- */
 .hero-section {
   height: 83vh;
   display: flex;
@@ -63,158 +64,74 @@
   color: #ffffff;
 }
 
-.hero-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+/* ... all your current styles ... */
 
-.tagline-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 0.8rem;
-}
+/* --- add this at the very bottom --- */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;   /* stack left & right vertically */
+    height: auto;
+    padding: 1.2rem;
+    gap: 2rem;
+    text-align: center;
+  }
 
-.line {
-  width: 24px;
-  height: 2px;
-  background-color: #e30613; 
-}
+  .hero-left, .hero-right {
+    flex: none;
+    width: 100%;
+    align-items: center;
+  }
 
-.established-text {
-  color: #cccccc; 
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 
-.hero-title {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0 0 1rem 0;
-  color: #ffffff;
-}
+  .hero-description {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
 
-.highlight-italic {
-  color: #e30613;
-  font-style: italic;
-}
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
 
-.hero-description {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 90%;
-  margin: 0 0 2rem 0;
-  color: #cccccc;
-}
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-}
+  .stats-card {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
 
-.btn {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
+  .graphic-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+  }
 
-.btn-primary {
-  background-color: #e30613;
-  color: #ffffff;
-  border: none;
-}
+  .hero-seal {
+    width: 200px;
+    height: auto;
+  }
 
-.btn-secondary {
-  background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #e30613;
-}
+  .card-title {
+    font-size: 1.2rem;
+  }
 
-.stats-card {
-  display: flex;
-  justify-content: center;
-  background-color: #111111;
-  border-radius: 10px;
-  padding: 1rem;
-}
+  .card-motto {
+    font-size: 0.75rem;
+  }
 
-.stat-item {
-  text-align: center;
-}
-
-.stat-item h3 {
-  color: #e30613;
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.stat-item p {
-  color: #cccccc;
-  font-size: 0.75rem;
-  margin: 0.2rem 0 0 0;
-}
-
-.hero-right {
-  flex: 1;
-  display: flex;
-}
-
-.graphic-card {
-  width: 50%;
-  height: 50%;
-  background: linear-gradient(135deg, #111111 20%, #240303 50%);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  padding: 2rem;
-}
-
-.hero-seal {
-  width: 400px;
-  height: auto;
-  margin-bottom: 1.2rem;
-}
-
-.card-title {
-  color: #ffffff;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.65rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.card-motto {
-  color: #e30613;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin: 0.6rem 0 0.8rem 0;
-}
-
-.quote {
-  color: #cccccc;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
-  font-size: 0.95rem;
-  margin: 0;
-  line-height: 1.35;
-  font-weight: 400;
+  .quote {
+    font-size: 0.8rem;
+  }
 }
 </style>
+
