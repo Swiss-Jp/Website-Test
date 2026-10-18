@@ -1,32 +1,21 @@
 <script setup lang="ts">
 import router from '@/router';
-
 </script>
 
 <template>
   <header class="navbar">
     <div class="logo-container">
-      <img src="@/assets/plogo.png" alt="PORSCHE Logo" class="logo-img" />
+      <img src="@/assets/CCS.png" alt="CCS Logo" class="logo-img" />
       <div class="logo-text">
-        <h1 class="brand-title">PORSCHE</h1>
-        <p class="brand-motto">Driven by Excellence, Engineered for Passion</p>
       </div>
     </div>
     
-    
-<nav class="nav-links">
-  <router-link to="/" class="nav-item">Home</router-link>
-  <router-link to="/models" class="nav-item">Models</router-link>
-  <router-link to="/admissions" class="nav-item">Admissions</router-link>
-  <router-link to="/experience" class="nav-item">Experience</router-link>
-  <router-link to="/motorsport" class="nav-item">Motorsport</router-link>
-  <router-link to="/news" class="nav-item">News</router-link>
-  <router-link to="/contact" class="nav-item">Contact</router-link>
-  <router-link to="/sample-data"class="nav-item">Sample Data</router-link>
-  <router-link to="/sample-methods"class="nav-item">Sample Methods</router-link>
-  <router-link to="/sample-model"class="nav-item">Sample Model</router-link>
-  <router-link to="/live-profile"class="nav-item">Live Profile</router-link>
-  <router-link to="/login" class="portal-btn">My Porsche</router-link>
+    <nav class="nav-links">
+      <router-link to="/#home" class="nav-item">HOME</router-link>
+      <router-link to="/#programs" class="nav-item">PROGRAMS</router-link>
+      <router-link to="/#faculty" class="nav-item">FACULTY AND STAFF</router-link>
+      <router-link to="/#partnership" class="nav-item">PARTNERSHIP</router-link>
+      <router-link to="/login" class="portal-btn">Portal</router-link>
     </nav>
   </header>
 </template>
@@ -36,37 +25,41 @@ import router from '@/router';
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 5%;
-  background-color: #000000; /* Porsche black */
+  padding: 1rem 5%;
+  background-color: #0d2326;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .logo-img {
-  width: 60px;
+  width: 45px;
   height: auto;
 }
 
 .brand-title {
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .brand-motto {
-  color: #cccccc; 
+  color: #f59e0b;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  font-weight: 500;
-  margin: 4px 0 0 0;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 2px 0 0 0;
 }
 
 .nav-links {
@@ -80,33 +73,35 @@ import router from '@/router';
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
-  transition: color 0.2s ease, border-bottom 0.2s ease;
+  font-size: 0.85rem;
+  border-bottom: none !important;
+  transition: color 0.2s ease;
 }
 
+/* Active state (Stays gold or white, no underline/borders) */
 .nav-item.router-link-exact-active {
-  color: #e30613; /* Porsche red */
+  color: #f59e0b;
   font-weight: 600;
-  border-bottom: 2px solid #e30613;
 }
 
+/* HOVER STATE: Changes text color to green */
 .nav-item:hover {
-  color: #e30613;
+  color: #10b981; /* Vibrant green */
 }
 
 .portal-btn {
-  background-color: #e30613; 
-  color: #ffffff;
+  background-color: #f59e0b; 
+  color: #0d2326;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  padding: 0.65rem 1.4rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 4px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.85rem;
   transition: background-color 0.2s ease;
 }
 
 .portal-btn:hover {
-  background-color: #b0000f; /* darker red hover */
+  background-color: #d97706;
 }
 </style>
