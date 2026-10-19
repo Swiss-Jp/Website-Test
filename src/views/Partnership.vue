@@ -8,87 +8,87 @@
 
     <div class="partners-grid">
       
-      <!-- Card 1 -->
+      <!-- Central Philippine University -->
       <div class="partner-card">
         <div class="card-header">
-          <span class="partner-badge">A</span>
-          <h3>AURA GRAPHICS</h3>
+          <span class="partner-badge">🎓</span>
+          <h3>CENTRAL PHILIPPINE UNIVERSITY</h3>
         </div>
-        <p class="category-subtitle">Advanced Rendering Solutions</p>
+        <p class="category-subtitle">Academic Excellence & Leadership</p>
         <ul class="features-list">
-          <li>Real-time global illumination</li>
-          <li>High-fidelity textures</li>
-          <li>Scalable rendering pipelines</li>
+          <li>Fostering exemplary academic standards</li>
+          <li>Comprehensive student development programs</li>
+          <li>Research and community extension initiatives</li>
         </ul>
       </div>
 
-      <!-- Card 2 -->
+      <!-- College of Computer Studies -->
       <div class="partner-card">
         <div class="card-header">
-          <span class="partner-badge">☁</span>
-          <h3>DATASTREAM CLOUD</h3>
+          <span class="partner-badge">💻</span>
+          <h3>COLLEGE OF COMPUTER STUDIES</h3>
         </div>
-        <p class="category-subtitle">Scalable Infrastructure</p>
+        <p class="category-subtitle">Computing & IT Innovation</p>
         <ul class="features-list">
-          <li>Compute orchestration</li>
-          <li>Distributed rendering nodes</li>
-          <li>Secure data management</li>
+          <li>Advanced software engineering curriculum</li>
+          <li>Hands-on technological specialization</li>
+          <li>Student tech community and research labs</li>
         </ul>
       </div>
 
-      <!-- Card 3 -->
+      <!-- Cisco -->
       <div class="partner-card">
         <div class="card-header">
-          <span class="partner-badge">🧠</span>
-          <h3>NEURAL RENDER LABS</h3>
+          <span class="partner-badge">🌐</span>
+          <h3>CISCO</h3>
         </div>
-        <p class="category-subtitle">AI-Powered Visualization</p>
+        <p class="category-subtitle">Networking & Cybersecurity</p>
         <ul class="features-list">
-          <li>Deep learning based denoising</li>
-          <li>Real-time upscaling</li>
-          <li>Content generation tools</li>
+          <li>Networking Academy certifications</li>
+          <li>Enterprise-grade infrastructure training</li>
+          <li>Cybersecurity essentials and hands-on labs</li>
         </ul>
       </div>
 
-      <!-- Card 4 -->
+      <!-- Discord -->
       <div class="partner-card">
         <div class="card-header">
-          <span class="partner-badge">V</span>
-          <h3>VERTEX SOFTWARE INC.</h3>
+          <span class="partner-badge">💬</span>
+          <h3>DISCORD</h3>
         </div>
-        <p class="category-subtitle">Leading Creative Tools</p>
+        <p class="category-subtitle">Community & Collaboration</p>
         <ul class="features-list">
-          <li>Integration of professional creative applications</li>
-          <li>Workflow optimization plugins</li>
-          <li>Educational licenses</li>
+          <li>Real-time developer communication platforms</li>
+          <li>Community bot development and integrations</li>
+          <li>Collaborative study and interest groups</li>
         </ul>
       </div>
 
-      <!-- Card 5 -->
+      <!-- Facebook -->
       <div class="partner-card">
         <div class="card-header">
-          <span class="partner-badge">🎮</span>
-          <h3>PIXEL FORCE GAMING</h3>
+          <span class="partner-badge">👥</span>
+          <h3>FACEBOOK</h3>
         </div>
-        <p class="category-subtitle">Next-Gen Interactive Graphics</p>
+        <p class="category-subtitle">Social Technology & Connectivity</p>
         <ul class="features-list">
-          <li>Optimizing game engine performance</li>
-          <li>Virtual reality integration</li>
-          <li>Esports and competitive play support</li>
+          <li>Developer ecosystem and open-source tools</li>
+          <li>Global outreach and digital connectivity</li>
+          <li>Interactive platform integration</li>
         </ul>
       </div>
 
-      <!-- Card 6 -->
+      <!-- VS Code -->
       <div class="partner-card">
         <div class="card-header">
-          <span class="partner-badge">⚙</span>
-          <h3>STATE TECH INNOVATIONS</h3>
+          <span class="partner-badge">⚡</span>
+          <h3>VS CODE</h3>
         </div>
-        <p class="category-subtitle">Regional Development & Grants</p>
+        <p class="category-subtitle">Developer Tools & Environments</p>
         <ul class="features-list">
-          <li>Funding for local research projects</li>
-          <li>Student internships</li>
-          <li>Technology transfer initiatives</li>
+          <li>Modern code editing and debugging workflow</li>
+          <li>Extensible plugin and extension ecosystem</li>
+          <li>Integrated source control and remote development</li>
         </ul>
       </div>
 
@@ -175,7 +175,7 @@
 }
 
 .category-subtitle {
-  color: #38bdf8; /* Cyan/Teal accent tone */
+  color: #38bdf8; 
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1.25rem;
