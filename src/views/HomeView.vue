@@ -14,11 +14,3 @@ import Partnership from '@/views/Partnership.vue';
   </div>
 </template>
 
-<style scoped>
-.home-container {
-  width: 100%;
-  background-color: #0d2326;
-  color: #ffffff;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-</style>

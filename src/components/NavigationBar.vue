@@ -78,15 +78,15 @@ import router from '@/router';
   transition: color 0.2s ease;
 }
 
-/* Active state (Stays gold or white, no underline/borders) */
+
 .nav-item.router-link-exact-active {
   color: #f59e0b;
   font-weight: 600;
 }
 
-/* HOVER STATE: Changes text color to green */
+
 .nav-item:hover {
-  color: #10b981; /* Vibrant green */
+  color: #10b981; 
 }
 
 .portal-btn {

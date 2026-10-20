@@ -1,21 +1,21 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// Import faculty images (Make sure your dean's image file name matches what you have in assets, e.g., dean.jpg)
-import deanImg from '@/assets/QUEJANO.png' // Replace with your actual dean image import if different
+
+import deanImg from '@/assets/QUEJANO.png' 
 import beldiaImg from '@/assets/beldia.jpg'
 import cambroneroImg from '@/assets/cambronero.jpg'
 import ojacastroImg from '@/assets/ojacastro.jpg'
 import montanoImg from '@/assets/montano.jpg'
 
-// Dean Data
+
 const dean = {
   name: 'MA. CHRISTINA A. QUIJANO, MSCS',
   title: 'Dean',
   image: deanImg 
 }
 
-// Selected filter state
+
 const activeTab = ref('ALL')
 
 
@@ -60,13 +60,34 @@ const facultyList = ref([
     program: 'BSCS',
     programsList: ['BSCS'],
     image: '' 
+  },
+  {
+    id: 6,
+    name: 'Jane Smith',
+    designation: 'Faculty Member',
+    program: 'BSIT',
+    programsList: ['BSIT'],
+    image: '' 
+  },
+  {
+    id: 7,
+    name: 'John Doe',
+    designation: 'Faculty Member',
+    program: 'BSCS',
+    programsList: ['BSCS'],
+    image: '' 
+  },
+  {
+    id: '8',
+    name: 'John Doe',
+    designation: 'Faculty Member',
+    program: 'BSCS',
+    programsList: ['BSCS'],
+    image: '' 
   }
-  
-
-
 ])
 
-// Filter faculty based on selected tab
+
 const filteredFaculty = computed(() => {
   if (activeTab.value === 'ALL') {
     return facultyList.value
@@ -80,11 +101,10 @@ const filteredFaculty = computed(() => {
 <template>
   <section id="faculty" class="section faculty-section">
     <div class="header-container">
-      <span class="subtitle">Teaching as a Way of Life</span>
       <h2>Faculty & Staff</h2>
     </div>
 
-    <!-- Dean Section -->
+
     <div class="dean-section">
       <h3 class="dean-heading">Dean</h3>
       <div class="faculty-card dean-card">
@@ -99,17 +119,6 @@ const filteredFaculty = computed(() => {
       </div>
     </div>
 
-    <!-- Category Filter Tabs -->
-    <div class="filter-tabs">
-      <button 
-        v-for="cat in categories" 
-        :key="cat"
-        :class="['tab-btn', { active: activeTab === cat }]"
-        @click="activeTab = cat"
-      >
-        {{ cat === 'ALL' ? 'All Faculty' : cat }}
-      </button>
-    </div>
 
     <!-- Faculty Cards Grid -->
     <div class="faculty-grid">
@@ -129,7 +138,6 @@ const filteredFaculty = computed(() => {
       </div>
     </div>
 
-    <!-- Empty state notice when a program tab has no listed faculty -->
     <p v-if="filteredFaculty.length === 0" class="no-faculty-msg">
       Faculty information for {{ activeTab }} program is being updated.
     </p>
@@ -146,6 +154,7 @@ const filteredFaculty = computed(() => {
   align-items: center;
   background-color: #ffffff;
   box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header-container {
@@ -153,22 +162,18 @@ const filteredFaculty = computed(() => {
   margin-bottom: 2rem;
 }
 
-.subtitle {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #666;
-  display: block;
-  margin-bottom: 0.5rem;
-}
 
 .header-container h2 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 2.2rem;
-  color: #2c4a3e;
-  font-weight: normal;
+  font-weight: 800;
+  color: #f59e0b; 
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-/* Dean Section Styling */
+
 .dean-section {
   display: flex;
   flex-direction: column;
@@ -178,8 +183,9 @@ const filteredFaculty = computed(() => {
 }
 
 .dean-heading {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.5rem;
-  color: #2c4a3e;
+  color: #ffc400;
   margin-bottom: 1rem;
   font-weight: normal;
 }
@@ -188,38 +194,8 @@ const filteredFaculty = computed(() => {
   width: 260px;
 }
 
-/* Category Filter Styling */
-.filter-tabs {
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 2.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
-.tab-btn {
-  background: #f1f5f9;
-  border: 1px solid #cbd5e1;
-  color: #334155;
-  padding: 0.5rem 1.25rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
 
-.tab-btn:hover {
-  background: #e2e8f0;
-}
-
-.tab-btn.active {
-  background: #2a3b32;
-  color: #131212;
-  border-color: #2a3b32;
-}
-
-/* Faculty Grid */
 .faculty-grid {
   display: grid;
   grid-template-columns: repeat(4, 240px);
@@ -262,16 +238,18 @@ const filteredFaculty = computed(() => {
 }
 
 .info-container h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.95rem;
   font-weight: bold;
-  color: #f4a261; 
+  color: #ff9e0c; 
   margin: 0;
   letter-spacing: 0.5px;
 }
 
 .title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.8rem;
-  color: #ffffff;
+  color: #fffefe;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -279,15 +257,10 @@ const filteredFaculty = computed(() => {
 
 .card-line {
   height: 4px;
-  background-color: #fafafa; 
+  background-color: #fd8f00; 
   width: 100%;
 }
 
-.no-faculty-msg {
-  color: #64748b;
-  font-style: italic;
-  margin-top: 2rem;
-}
 
 @media (max-width: 1024px) {
   .faculty-grid {

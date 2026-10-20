@@ -13,9 +13,7 @@
       
       <p class="hero-tagline">different PEOPLE, ONE goal</p>
       
-      <div class="hero-action">
-        <a href="#programs" class="btn-future">Your FUTURE begins HERE</a>
-      </div>
+
     </div>
   </section>
 </template>
@@ -27,7 +25,6 @@
   align-items: center;
   padding: 6rem 8%;
   background-color: #0d2326; 
- 
   background-image: linear-gradient(to right, rgba(13, 35, 38, 0.95) 40%, rgba(13, 35, 38, 0.4) 100%), url('@/assets/ccsblack.jpg');
   background-size: cover;
   background-position: center;
@@ -66,22 +63,7 @@
   letter-spacing: 0.5px;
 }
 
-.btn-future {
-  background-color: #f59e0b;
-  color: #0d2326;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  padding: 0.9rem 2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  display: inline-block;
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
 
-.btn-future:hover {
-  background-color: #d97706;
-  transform: translateY(-2px);
-}
+
+
 </style>
